@@ -201,33 +201,4 @@ char	*get_next_line(int fd)
 	This means the stash, when arriving towards the end of file,
 	will contain all the data, and that data will be returned
 	in the else statement in extract_line.
-	
-	xxxxxxxx
-	----------------
-
-		MEMO GNL
-
-	---------------
-
-	v Read function v
-
-	Requires <fcntl.h> library.
-
-	Takes 3 params :
-
-	- File descriptor (int fd)
-	- the buffer pointer, which stores the data being read (void *buf)
-	- the size of the buffer, which is the amount of data that will be 
-		read (size_t nbytes)
-
-	ssize_t read(int fd, void *buf, size_t nbytes);
-
-	==============
-	Tips and steps
-	==============
-
-	use strchr to find \n, strchr searches a wanted char within a string.
-	use strjoin to merge the data after it was read.
-	use substr to remove extra read data after \n.
-
 */
