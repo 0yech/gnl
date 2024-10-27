@@ -6,13 +6,12 @@
 /*   By: cheyo <cheyo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 20:03:46 by nrey              #+#    #+#             */
-/*   Updated: 2024/10/26 03:49:51 by cheyo            ###   ########.fr       */
+/*   Updated: 2024/10/27 02:19:32 by cheyo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-// Fonction ft_strlen
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
@@ -23,7 +22,6 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-// Fonction ft_strdup
 char	*ft_strdup(const char *s1)
 {
 	char	*dup;
@@ -44,7 +42,6 @@ char	*ft_strdup(const char *s1)
 	return (dup);
 }
 
-// Fonction ft_strchr
 char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
@@ -63,7 +60,6 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-// Fonction ft_strjoin
 char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*result;
@@ -87,7 +83,6 @@ char	*ft_strjoin(char *s1, char *s2)
 	return (result);
 }
 
-// Fonction ft_substr
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
