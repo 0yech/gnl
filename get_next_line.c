@@ -6,14 +6,13 @@
 /*   By: cheyo <cheyo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 20:03:35 by nrey              #+#    #+#             */
-/*   Updated: 2024/10/26 03:51:56 by cheyo            ###   ########.fr       */
+/*   Updated: 2024/10/28 15:22:55 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 #include <fcntl.h>
 
-// Fonction pour gérer les erreurs de lecture
 static char	*handle_read_error(char *buf, char *stash)
 {
 	free(stash);
@@ -21,7 +20,6 @@ static char	*handle_read_error(char *buf, char *stash)
 	return (NULL);
 }
 
-// Fonction pour ajouter le buffer au stash
 static char	*append_buffer_to_stash(char *stash, char *buf)
 {
 	char	*temp;
@@ -32,7 +30,6 @@ static char	*append_buffer_to_stash(char *stash, char *buf)
 	return (stash);
 }
 
-// Fonction pour lire depuis le fichier et mettre à jour le stash
 static char	*read_and_update_stash(int fd, char *stash)
 {
 	char	*buf;
