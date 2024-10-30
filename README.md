@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/94e4623d-3937-405a-a29d-4ba0c27c78d6)
 <img align="right" src="https://github.com/user-attachments/assets/47ac4680-dd0b-4f44-bcfd-6f4c1f296fc9"/>
-# Get_next_line, Understanding file descriptors and static variables
+# Get_next_line - Understanding file descriptors and static variables
 
 **Authorized external functions**
 
